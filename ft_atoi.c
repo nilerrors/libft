@@ -6,7 +6,7 @@
 /*   By: senayat <senayat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 12:45:56 by senayat           #+#    #+#             */
-/*   Updated: 2024/04/20 12:47:59 by senayat          ###   ########.fr       */
+/*   Updated: 2024/04/22 14:11:14 by senayat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 		i++;
 	if (str[i] == '+')
 		i++;
-	if (str[i] == '-')
+	else if (str[i] == '-')
 	{
 		negative = 1;
 		i++;

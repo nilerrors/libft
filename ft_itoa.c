@@ -6,7 +6,7 @@
 /*   By: senayat <senayat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 12:58:36 by senayat           #+#    #+#             */
-/*   Updated: 2024/04/20 13:39:44 by senayat          ###   ########.fr       */
+/*   Updated: 2024/04/22 14:21:59 by senayat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,31 @@ static int	ft_nbrlen(long int nbr)
 	return (len);
 }
 
+static char	*ft_itoa_neg2147483648(void)
+{
+	char	*str;
+
+	str = (char *)malloc(sizeof(char) * 12);
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, "-2147483648", 12);
+	return (str);
+}
+
 char	*ft_itoa(int n)
 {
 	size_t	len;
 	int		negative;
 	char	*str;
 
+	if (n == -2147483648)
+		return (ft_itoa_neg2147483648());
 	negative = (n < 0);
+	len = ft_nbrlen(n);
 	if (n < 0)
 		n = -n;
-	len = ft_nbrlen(n);
+	if (n < 0)
+		len++;
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);

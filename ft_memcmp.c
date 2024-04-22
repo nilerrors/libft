@@ -6,7 +6,7 @@
 /*   By: senayat <senayat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 10:55:51 by senayat           #+#    #+#             */
-/*   Updated: 2024/04/19 12:02:10 by senayat          ###   ########.fr       */
+/*   Updated: 2024/04/22 14:09:04 by senayat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t			i;
-	unsigned char	diff;
+	size_t	i;
+	int		diff;
 
 	i = 0;
 	while (i < n)

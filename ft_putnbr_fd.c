@@ -6,7 +6,7 @@
 /*   By: senayat <senayat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 19:34:09 by senayat           #+#    #+#             */
-/*   Updated: 2024/04/20 19:43:04 by senayat          ###   ########.fr       */
+/*   Updated: 2024/04/22 14:43:15 by senayat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ static void	ft_putnum(int n, int fd)
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (fd < 0)
-		return ;
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);

@@ -6,7 +6,7 @@
 /*   By: senayat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:25:48 by senayat           #+#    #+#             */
-/*   Updated: 2024/04/17 13:31:43 by senayat          ###   ########.fr       */
+/*   Updated: 2024/04/22 14:48:38 by senayat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t	i;
 
-	if (!b)
-		return (NULL);
 	i = 0;
 	while (i < len)
 	{

@@ -6,7 +6,7 @@
 /*   By: senayat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:38:01 by senayat           #+#    #+#             */
-/*   Updated: 2024/04/17 13:43:26 by senayat          ###   ########.fr       */
+/*   Updated: 2024/04/22 14:00:21 by senayat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 
-	if (!dst)
+	if (!src && !dst)
 		return (NULL);
 	i = 0;
 	while (i < n)
