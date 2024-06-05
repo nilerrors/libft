@@ -6,7 +6,7 @@
 #    By: senayat <senayat@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 22:45:48 by senayat           #+#    #+#              #
-#    Updated: 2024/06/05 20:24:21 by senayat          ###   ########.fr        #
+#    Updated: 2024/06/05 23:52:47 by senayat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,12 @@ SRCS	=	src/array_list_adddel.c	src/array_list_create.c	\
 			src/ft_strmapi.c		src/ft_strncmp.c		\
 			src/ft_strnstr.c		src/ft_strrchr.c		\
 			src/ft_strtrim.c		src/ft_substr.c			\
-			src/ft_tolower.c		src/ft_toupper.c
+			src/ft_tolower.c		src/ft_toupper.c		\
+															\
+			src/printf/ft_printf.c	src/printf/ft_puts.c	\
+			src/printf/ft_putc.c	src/printf/ft_putp.c	\
+			src/printf/ft_putd.c	src/printf/ft_putx.c	\
+			src/printf/ft_putu.c
 
 OBJS		=	$(SRCS:.c=.o)
 
