@@ -6,7 +6,7 @@
 #    By: senayat <senayat@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 22:45:48 by senayat           #+#    #+#              #
-#    Updated: 2024/06/05 23:52:47 by senayat          ###   ########.fr        #
+#    Updated: 2024/06/06 19:47:35 by senayat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,8 @@ NAME		=	libft.a
 
 
 all:		$(NAME)
+
+lib:		all clean
 
 $(NAME):	$(OBJS)
 			@ar rcs $(NAME) $(OBJS)
